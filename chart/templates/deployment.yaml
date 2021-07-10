@@ -43,7 +43,7 @@ spec:
               port: http
           readinessProbe:
             httpGet:
-              path: /actuator/health/readness
+              path: /actuator/health/readiness
               port: http
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
